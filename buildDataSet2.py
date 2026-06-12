@@ -324,7 +324,7 @@ def writeDataSet(fichier, repetition:int, length:int):
         builder:Builder = tokenSeqBuilder(2, 26, [])
         fichier.write(builder.export())
         
-    # ex: [LSTM] => répétition de 2 à 4 caractères sans options
+    # ex: [LSTM] => répétition de 1 à 4 caractères sans options
     for _ in range(repetition):
         usedChar:list[str] = []
         innerBuilder:Builder = tokenSeqBuilder(1, 4, usedChar)
